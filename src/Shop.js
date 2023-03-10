@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import ItemCard from './ItemCard';
+import SortPanel from './SortPanel';
 
 export default function Shop() {
   const [items, setItems] = useState([]);
@@ -11,8 +12,6 @@ export default function Shop() {
     setItems(items);
   };
 
-  const itemList = () => {};
-
   useEffect(() => {
     getShopItems();
   }, []);
@@ -21,14 +20,9 @@ export default function Shop() {
 
   return (
     <div className="shopPage">
-      <div className="sortPanel">
-        <ul className="sortList">
-          <li className="sortItem">ID Numbers</li>
-          <li className="sortItem">Price (Low to High)</li>
-          <li className="sortItem">Price (High to Low)</li>
-          <li className="sortItem">Items</li>
-        </ul>
-      </div>
+      <h2>Shop Page</h2>
+
+      <SortPanel />
       <div className="shopGrid">
         {items.length === 0 ? (
           <h1>Loading...</h1>
