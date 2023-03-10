@@ -3,7 +3,7 @@ import QuantityButton from './QuantityButton';
 export default function ItemCard(props) {
   console.log(props.item);
   return (
-    <div className="itemCard">
+    <div className={`itemCard ${props.isCart}`}>
       <div className="itemImage">
         <img src={props.item.image} alt="" />
         <QuantityButton />

@@ -20,7 +20,9 @@ export default function Nav() {
       </div>
 
       <span className="right cartNav clickable">
-        <img src={CartIcon} alt="" />
+        <Link to="/cart">
+          <img src={CartIcon} alt="" />
+        </Link>
       </span>
     </nav>
   );
