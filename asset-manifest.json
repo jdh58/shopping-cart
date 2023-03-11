@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/memcard/static/css/main.49e118f1.css",
+    "main.js": "/memcard/static/js/main.47c9dbba.js",
+    "static/media/image.png": "/memcard/static/media/image.c62f03f9a212ad995ab9.png",
+    "static/media/Roboto-Medium.ttf": "/memcard/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
+    "static/media/Roboto-Thin.ttf": "/memcard/static/media/Roboto-Thin.a732a12eb07742232407.ttf",
+    "static/media/Roboto-Regular.ttf": "/memcard/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/Roboto-Black.ttf": "/memcard/static/media/Roboto-Black.cf56c1b149d0a5e8d7c6.ttf",
+    "static/media/Roboto-Bold.ttf": "/memcard/static/media/Roboto-Bold.f80816a5455d171f948d.ttf",
+    "static/media/Roboto-Light.ttf": "/memcard/static/media/Roboto-Light.333da16a3f3cc391d087.ttf",
+    "static/media/istockphoto-863190232-170667a.jpeg": "/memcard/static/media/istockphoto-863190232-170667a.ec241e884c870507bb42.jpeg",
+    "index.html": "/memcard/index.html",
+    "static/media/shopping-cart.svg": "/memcard/static/media/shopping-cart.95534b44067e02169438e45ea2172327.svg",
+    "main.49e118f1.css.map": "/memcard/static/css/main.49e118f1.css.map",
+    "main.47c9dbba.js.map": "/memcard/static/js/main.47c9dbba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49e118f1.css",
+    "static/js/main.47c9dbba.js"
+  ]
+}
