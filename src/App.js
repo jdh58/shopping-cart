@@ -29,6 +29,9 @@ function App() {
     setCart([
       ...cart,
       {
+        title: item.title,
+        price: item.price,
+        image: item.image,
         quantity: quantity,
         id: id,
       },

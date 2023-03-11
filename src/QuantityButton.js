@@ -12,6 +12,9 @@ export default function QuantityButton(props) {
 
   useEffect(() => {
     setIsInitial(false);
+    if (props.initialQuantity) {
+      setQuantity(props.initialQuantity);
+    }
   }, []);
 
   return (

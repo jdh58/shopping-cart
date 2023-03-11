@@ -7,7 +7,7 @@ let updateQuantity = jest.fn();
 
 describe('button tests', () => {
   it('upddates to input when "+ Add" is clicked', () => {
-    render(<QuantityButton updateQuantity={updateQuantity} />);
+    render(<QuantityButton updateQuantity={updateQuantity} item={{}} />);
     let addButton = screen.getByRole('button');
 
     act(() => {
@@ -19,7 +19,7 @@ describe('button tests', () => {
   });
 
   it('goes back to +add button when quantity set to 0', () => {
-    render(<QuantityButton updateQuantity={updateQuantity} />);
+    render(<QuantityButton updateQuantity={updateQuantity} item={{}} />);
     let addButton = screen.getByRole('button');
 
     act(() => {
@@ -34,7 +34,7 @@ describe('button tests', () => {
   });
 
   it('updates quantity when using incrementer', () => {
-    render(<QuantityButton updateQuantity={updateQuantity} />);
+    render(<QuantityButton updateQuantity={updateQuantity} item={{}} />);
     let addButton = screen.getByRole('button');
 
     act(() => {
@@ -49,7 +49,7 @@ describe('button tests', () => {
   });
 
   it('updates quantity when using decrementer', () => {
-    render(<QuantityButton updateQuantity={updateQuantity} />);
+    render(<QuantityButton updateQuantity={updateQuantity} item={{}} />);
     let addButton = screen.getByRole('button');
 
     act(() => {

@@ -8,6 +8,7 @@ export default function ItemCard(props) {
         <QuantityButton
           item={props.item}
           updateQuantity={props.updateQuantity}
+          initialQuantity={props.initialQuantity}
         />
       </div>
       <div className="itemInfo">

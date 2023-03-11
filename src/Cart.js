@@ -7,12 +7,12 @@ export default function Cart(props) {
     <div className="cartPage">
       <div className="cartItems">
         {props.cart.map((item) => {
-          console.log(item);
           return (
             <ItemCard
               key={item.id}
               item={item}
               isCart={'cart'}
+              initialQuantity={item.quantity}
               updateQuantity={props.updateQuantity}
             />
           );

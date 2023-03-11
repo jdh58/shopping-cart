@@ -48,4 +48,5 @@ describe('cart renders proper items', () => {
     expect(screen.getByText(/^\$48$/)).toBeInTheDocument();
     expect(screen.getByText(/^\$12$/)).toBeInTheDocument();
   });
+  it('sets initial quantity', () => {});
 });
