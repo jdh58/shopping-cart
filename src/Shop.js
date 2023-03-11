@@ -1,14 +1,15 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import ItemCard from './ItemCard';
 import SortPanel from './SortPanel';
 
-export default function Shop() {
+export default function Shop(props) {
   const [items, setItems] = useState([]);
   const [sort, setSort] = useState('');
 
   const getShopItems = async () => {
     let items = await fetch('https://fakestoreapi.com/products');
     items = await items.json();
+    // Update the state and export the list to App component
     setItems(items);
   };
 
@@ -27,7 +28,13 @@ export default function Shop() {
         {items.length === 0 ? (
           <h1>Loading...</h1>
         ) : (
-          items.map((item) => <ItemCard item={item} />)
+          items.map((item) => (
+            <ItemCard
+              key={item.id}
+              item={item}
+              updateQuantity={props.updateQuantity}
+            />
+          ))
         )}
       </div>
     </div>
