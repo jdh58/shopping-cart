@@ -1,9 +1,11 @@
+import './styles/SortPanel.css';
+
 export default function SortPanel(props) {
   return (
     <div className="sortPanel">
       <ul className="sortList">
         <h4>Sort by:</h4>
-        <li className="sortItem">ID Numbers</li>
+        <li className="sortItem selected">ID Numbers</li>
         <li className="sortItem">Price (Low to High)</li>
         <li className="sortItem">Price (High to Low)</li>
         <li className="sortItem">Items</li>

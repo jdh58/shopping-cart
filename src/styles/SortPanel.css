@@ -1,0 +1,51 @@
+.sortPanel {
+  grid-row: 1 / -1;
+  grid-column: 1 / 2;
+  height: calc(100vh - 50px);
+  background-color: #e1e1e1;
+  font-size: 1.5rem;
+  position: sticky;
+  margin-right: 25px;
+  left: 0;
+  top: 50px;
+}
+
+.sortList {
+  margin-bottom: 15px;
+}
+
+.sortPanel ul {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.sortPanel li {
+  padding-left: 25px;
+  line-height: 3rem;
+}
+
+.sortList li:hover {
+  cursor: pointer;
+}
+
+.sortPanel label {
+  user-select: none;
+}
+
+.sortPanel label:hover {
+  cursor: pointer;
+}
+
+.sortItem.selected {
+  font-weight: 500;
+}
+
+.sortPanel h4 {
+  font-size: 1.6rem;
+  background-color: #fff;
+  font-weight: 500;
+  padding: 7.5px 0;
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
