@@ -2,6 +2,7 @@ import CartIcon from './assets/shopping-cart.svg';
 // import Logo from './logo.png';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import './styles/Nav.css';
 
 export default function Nav(props) {
   const [totalQuantity, setTotalQuantity] = useState(0);
@@ -17,25 +18,22 @@ export default function Nav(props) {
   return (
     <nav className="nav">
       <div className="left">
-        <span className="logo">
-          <Link to="/">
-            <img src="Logo" alt="" />
-          </Link>
-        </span>
-        <span className="homeNav clickable">
-          <Link to="/">Home</Link>
-        </span>
-        <span className="shopNav clickable">
-          <Link to="/shop">Shop</Link>
-        </span>
+        <Link to="/" className="homeNav clickable">
+          Home
+        </Link>
+        <Link to="/shop" className="shopNav clickable">
+          Shop
+        </Link>
       </div>
 
-      <span className="right cartNav clickable">
-        <Link to="/cart">
-          <p data-testid="cart">{totalQuantity}</p>
-          <img src={CartIcon} alt="" />
-        </Link>
-      </span>
+      <Link to="/cart" className="right cartNav clickable">
+        {totalQuantity > 0 ? (
+          <div className="quantContainer">
+            <p data-testid="cart">{totalQuantity}</p>
+          </div>
+        ) : null}
+        <img src={CartIcon} alt="" />
+      </Link>
     </nav>
   );
 }

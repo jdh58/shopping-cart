@@ -2,7 +2,6 @@ import CheckoutPanel from './CheckoutPanel';
 import ItemCard from './ItemCard';
 
 export default function Cart(props) {
-  console.log(props.cart);
   return (
     <div className="cartPage">
       <div className="cartItems">

@@ -1,0 +1,77 @@
+.nav {
+  height: 50px;
+  padding: 0 100px;
+  background-color: rgb(55, 57, 73);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.clickable {
+  display: block;
+  position: relative;
+  height: 100%;
+  padding: 0 15px;
+}
+
+.clickable:hover {
+  background-color: rgb(67, 69, 89);
+  cursor: pointer;
+}
+
+.nav > .left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.left a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.nav .right {
+  margin-left: auto;
+}
+
+.right {
+  display: flex;
+  align-items: cetner;
+}
+
+.right a {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.right img {
+  width: 32px;
+}
+
+.right .quantContainer {
+  background-color: #e30909;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 7px;
+  right: 0;
+  top: 2px;
+  width: fit-content;
+  height: fit-content;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.right p {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.nav span.current a {
+  font-weight: 600;
+}

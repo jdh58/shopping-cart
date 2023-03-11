@@ -21,11 +21,11 @@ function NavTest() {
 let cart;
 
 describe('cart updates properly', () => {
-  it('starts at 0', () => {
+  it('doesnt render with 0', () => {
     cart = [];
     render(<NavTest cart={cart} />);
 
-    expect(screen.getByTestId('cart')).toHaveTextContent(/^0$/);
+    expect(screen.queryByTestId('cart')).not.toBeInTheDocument();
   });
 
   it('updates properly with one item', () => {
