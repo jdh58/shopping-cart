@@ -2,7 +2,7 @@ import Home from './Home';
 import Shop from './Shop';
 import Cart from './Cart';
 import Nav from './Nav';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -39,7 +39,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <HashRouter basename="/">
       <Nav cart={cart} />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -49,7 +49,7 @@ function App() {
           element={<Cart cart={cart} updateQuantity={updateCart} />}
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
