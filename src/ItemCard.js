@@ -1,4 +1,5 @@
 import QuantityButton from './QuantityButton';
+import './styles/ItemCard.css';
 
 export default function ItemCard(props) {
   return (

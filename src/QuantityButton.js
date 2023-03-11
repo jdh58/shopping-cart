@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import './styles/QuantityButton.css';
 
 export default function QuantityButton(props) {
   const [quantity, setQuantity] = useState(0);
@@ -20,7 +21,7 @@ export default function QuantityButton(props) {
   return (
     <>
       {quantity > 0 ? (
-        <div className="quantButton">
+        <div className="quantButton extra">
           <div
             className="decrement"
             onClick={() => {
@@ -31,7 +32,9 @@ export default function QuantityButton(props) {
           </div>
           <input
             data-testid="quantInput"
-            type="number"
+            type="text"
+            pattern="[0-9]*"
+            inputMode="numeric"
             className={`quantity input${props.item.id}`}
             value={quantity}
             onChange={() => {

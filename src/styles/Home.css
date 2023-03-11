@@ -23,7 +23,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: -150px;
-  border: 2px solid black;
+  border: 2px solid white;
   justify-self: center;
   width: min(450px, 95%);
   height: 75vh;

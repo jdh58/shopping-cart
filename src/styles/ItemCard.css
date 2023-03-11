@@ -1,0 +1,37 @@
+.itemCard {
+  width: 100%;
+  height: 450px;
+  background-color: #fff;
+}
+
+.itemImage {
+  position: relative;
+  display: flex;
+  min-height: 300px;
+  max-height: 350px;
+}
+
+.itemImage img {
+  justify-self: center;
+  max-width: 250px;
+  object-fit: contain;
+}
+
+.quantButton {
+  position: absolute;
+  left: -15px;
+  bottom: -15px;
+}
+
+.itemInfo {
+  margin-top: 25px;
+}
+
+.itemInfo > .price {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.itemInfo > .title {
+  font-size: 1.8rem;
+}

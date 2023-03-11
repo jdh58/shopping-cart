@@ -1,6 +1,8 @@
+import './styles/Shop.css';
 import React, { useState, useEffect } from 'react';
 import ItemCard from './ItemCard';
 import SortPanel from './SortPanel';
+import './styles/Shop.css';
 
 export default function Shop(props) {
   const [items, setItems] = useState([]);
