@@ -38,3 +38,27 @@
 .itemInfo > .title {
   font-size: 1.8rem;
 }
+
+.itemCard.cart {
+  display: grid;
+  height: 295px;
+  gap: 0;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.itemCard.cart .itemImage {
+  align-self: center;
+  justify-self: end;
+  min-height: 250px;
+  max-height: 250px;
+}
+
+.itemCard.cart .itemInfo {
+  justify-self: start;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 5px;
+}

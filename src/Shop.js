@@ -28,7 +28,7 @@ export default function Shop(props) {
       <SortPanel />
       <div className="shopGrid">
         {items.length === 0 ? (
-          <h1>Loading...</h1>
+          <h2 className="loading">Loading...</h2>
         ) : (
           items.map((item) => (
             <ItemCard
